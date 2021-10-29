@@ -1,0 +1,40 @@
+.calc {
+    position: fixed;
+    right: 1vw;
+    bottom: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5vw;
+    width: fit-content;
+    height: fit-content;
+    border: 0.1vw solid grey;
+    padding: 1vw;
+    border-radius: 10%;
+}
+
+.calc > div {
+    background-color: white;
+    border: 0.1vw solid grey;
+    border-radius: 0.35vw;
+    padding: 0.25vw;
+}
+
+.input {
+    grid-column: 1 / 5;
+}
+
+.add {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+}
+
+.ent {
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+}
+
+/* .del {
+    grid-row: 0 / 1;
+    grid-column: 0 / 1;
+} */

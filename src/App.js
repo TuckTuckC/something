@@ -5,7 +5,7 @@ import Calculator from './Components/Calculator';
 
 function App() {
 	
-	const [calc, setCalc] = useState(0)
+	const [calc, setCalc] = useState(1)
 
   	return (
 		<div className="App">
