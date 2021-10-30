@@ -10,7 +10,7 @@
     height: fit-content;
     border: 0.1vw solid grey;
     padding: 1vw;
-    border-radius: 10%;
+    border-radius: 1vw;
 }
 
 .calc > div {
@@ -24,14 +24,18 @@
     grid-column: 1 / 5;
 }
 
+.output {
+    grid-column: 1 / 5;
+}
+
 .add {
     grid-column: 4 / 5;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
 }
 
 .ent {
     grid-column: 4 / 5;
-    grid-row: 5 / 7;
+    grid-row: 6 / 8;
 }
 
 /* .del {
