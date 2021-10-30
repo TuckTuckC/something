@@ -2,7 +2,6 @@ import './App.css';
 import {useState} from 'react';
 import Calculator from './Components/Calculator';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { faCalculator } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
@@ -17,13 +16,15 @@ function App() {
 
   	return (
 		<div className="App">
-			<Calculator calc = {calc} />
-			<FontAwesomeIcon 
-				icon={faCalculator} 
-				className='toggleCalc' 
-				onClick={() => toggle()}
-				style={iconPos === 1 ? { bottom:'37%' } : { bottom: '0.5vw' }}
-			/>
+			<div className='calcContainer'>
+				<Calculator calc = {calc} />
+				<FontAwesomeIcon 
+					icon={faCalculator} 
+					className='toggleCalc' 
+					onClick={() => toggle()}
+					style={iconPos === 1 ? { bottom:'37%' } : { bottom: '0.5vw' }}
+				/>
+			</div>
 		</div>
   	);
 };
