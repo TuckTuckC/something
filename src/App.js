@@ -7,7 +7,13 @@ import { faCalculator } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
 	
-	const [calc, setCalc] = useState(1)
+	const [calc, setCalc] = useState(0)
+	const [iconPos, setIconPos] = useState(0)
+
+	const toggle = () => {
+		setCalc(calc === 1 ? 0 : 1);
+		setIconPos(iconPos === 1 ? 0 : 1);
+	}
 
   	return (
 		<div className="App">
@@ -15,7 +21,8 @@ function App() {
 			<FontAwesomeIcon 
 				icon={faCalculator} 
 				className='toggleCalc' 
-				onClick={() => setCalc(calc === 1 ? 0 : 1)}
+				onClick={() => toggle()}
+				style={iconPos === 1 ? { bottom:'37%' } : { bottom: '0.5vw' }}
 			/>
 		</div>
   	);

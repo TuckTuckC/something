@@ -1,5 +1,10 @@
 .toggleCalc {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 0.5vw;
+  right: 0.5vw;
+  height: 2vw;
+}
+
+.toggleCalc :hover {
+  cursor: pointer;
 }

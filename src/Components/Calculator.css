@@ -1,7 +1,7 @@
 .calc {
     position: fixed;
-    right: 1vw;
-    bottom: 1vw;
+    right: 0.5vw;
+    bottom: 0.65vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
