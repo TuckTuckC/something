@@ -31,16 +31,19 @@ function App() {
 				<nav>
 					<ul>
 						<li>
-							<Link to='/'>Home</Link>
+							<Link className='link' to='/'>Home</Link>
 						</li>
+						<div className='border'></div>
 						<li>
-							<Link to='/about'>About</Link>
+							<Link className='link' to='/about'>About</Link>
 						</li>
+						<div className='border'></div>
 						<li>
-							<Link to='/budgets'>Budgets</Link>
+							<Link className='link' to='/budgets'>Budgets</Link>
 						</li>
+						<div className='border'></div>
 						<li>
-							<Link to='/profile'>Profile</Link>
+							<Link className='link' to='/profile'>Profile</Link>
 						</li>
 					</ul>
 				</nav>
